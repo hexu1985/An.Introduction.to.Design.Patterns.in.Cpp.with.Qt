@@ -1,2 +1,4 @@
 make distclean
-rmdir debug release _moc _obj
+rmdir debug release 
+rm *.pro
+

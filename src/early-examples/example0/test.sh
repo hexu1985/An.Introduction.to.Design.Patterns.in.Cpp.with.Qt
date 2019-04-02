@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-./fac <<EOF
+./debug/example0 <<EOF
 6
 EOF
 
-./fac <<EOF
+./debug/example0 <<EOF
 4
 EOF
