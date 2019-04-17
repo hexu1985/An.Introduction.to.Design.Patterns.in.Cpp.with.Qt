@@ -1,3 +1,2 @@
-qmake -project
 qmake
 make
