@@ -1,4 +1,4 @@
 make distclean
-rm ./debug/docbook.dll
+rm ./debug/*.dll
 rmdir debug release 
 rm -rf _moc _obj

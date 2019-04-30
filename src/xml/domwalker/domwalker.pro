@@ -10,7 +10,7 @@ LIBS += -L$$(CPPLIBS)/dataobjects
 # Search here for headers:
 INCLUDEPATH += . $$(CPPLIBS)/dataobjects
 
-QT += xml gui
+QT += xml gui widgets
 
 CONFIG += console
 TEMPLATE = app
