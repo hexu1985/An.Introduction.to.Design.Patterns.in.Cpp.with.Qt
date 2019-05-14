@@ -1,6 +1,8 @@
-#include <QtGui>
 #include "abstractmetadataloader.h"
 #include "metadataloaderprogresswidget.h"
+#include <QHBoxLayout>
+#include <QProgressBar>
+#include <QToolButton>
 
 
 MetaDataLoaderProgressWidget::MetaDataLoaderProgressWidget(Abstract::MetaDataLoader *mdl, QWidget *parent) :

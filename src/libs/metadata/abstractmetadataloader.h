@@ -1,6 +1,7 @@
 #ifndef AMETADATALOADER_H
 #define AMETADATALOADER_H
 
+#include <QObject>
 #include "metadatavalue.h"
 
 //start

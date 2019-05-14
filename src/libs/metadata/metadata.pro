@@ -5,7 +5,7 @@ win32 {
     DEFINES += METADATA_DLL
 }
 
-LIBS += -ldataobjects 
+LIBS += -L../dataobjects -ldataobjects 
 
 INCLUDEPATH += . ../dataobjects
 
@@ -38,3 +38,4 @@ SOURCES += preference.cpp \
  
 FORMS += metadatawidget.ui
 OTHER_FILES += README.txt MetaDataWidget.ui
+QT += widgets
