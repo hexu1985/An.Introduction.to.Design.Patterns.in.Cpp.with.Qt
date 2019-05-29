@@ -1,7 +1,23 @@
-#include <QtGui>
+#include <QAction>
+#include <QLabel>
+#include <QMenu>
+#include <QTextEdit>
+#include <QStackedWidget>
 #include <QDockWidget>
 #include <QTextEdit>
 #include <QStackedWidget>
+#include <QFileInfo>
+#include <QTextStream>
+#include <QMessageBox>
+#include <QStatusBar>
+#include <QSettings>
+#include <QToolBar>
+#include <QCloseEvent>
+#include <QApplication>
+#include <QMenuBar>
+#include <QDebug>
+#include <QFileDialog>
+#include <QDir>
 #include "mymainwindow.h"
 
 MyMainWindow::MyMainWindow(QWidget* parent) :QMainWindow(parent) {
@@ -62,7 +78,7 @@ bool MyMainWindow::saveAs() {
 	int ret = QMessageBox::warning(this, tr("Application"),
 		tr("File %1 already exists.\n"
 		"Do you want to overwrite it?")
-		.arg(QDir::convertSeparators(fileName)),
+		.arg(QDir::toNativeSeparators(fileName)),
 		QMessageBox::Yes | QMessageBox::Default,
 		QMessageBox::No | QMessageBox::Escape);
         if (ret == QMessageBox::No)
