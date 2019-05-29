@@ -5,6 +5,8 @@ DEPENDPATH += .
 INCLUDEPATH += .
 TARGET=objectbrowser
 
+QT += widgets
+
 # Input
 FORMS += qobjectbrowser.ui
 
