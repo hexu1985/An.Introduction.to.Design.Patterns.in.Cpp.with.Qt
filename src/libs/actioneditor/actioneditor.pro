@@ -10,6 +10,8 @@ FORMS += actiontableeditor.ui actioneditordialog.ui
 RESOURCES += ../icons/icons.qrc
 OTHER_FILES += readme.txt
 
+QT += widgets
+
 win32 {
     DEFINES += ACTIONEDITOR_DLL
 }
