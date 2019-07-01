@@ -3,6 +3,7 @@
 #include <QFormLayout>
 #include <QLabel>
 #include <QLineEdit>
+#include <QApplication>
 
 #include "masktestform.h"
 //start
@@ -37,7 +38,7 @@ void MaskTestForm::setupForm() {
             this, SLOT(installMask()));
     connect(m_StringEntry, SIGNAL(textChanged(QString)),
             this, SLOT(showResult()));
-    connect(quitButton, SIGNAL(clicked()), this, SLOT(quit()));
+    connect(quitButton, SIGNAL(clicked()), qApp, SLOT(quit()));
     connect(againButton, SIGNAL(clicked()), this, SLOT(again()));
 //start
 }
