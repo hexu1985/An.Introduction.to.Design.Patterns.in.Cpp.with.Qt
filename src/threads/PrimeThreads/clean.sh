@@ -1,2 +1,2 @@
 make distclean
-rmdir debug release 
+rmdir debug release _moc _obj _ui
