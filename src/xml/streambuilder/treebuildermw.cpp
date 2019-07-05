@@ -1,4 +1,5 @@
-#include <QtGui>
+#include <QFileDialog>
+#include <QTextBlock>
 #include "treebuildermw.h"
 #include "ui_treebuildermw.h"
 #include "xmltreemodel.h"
