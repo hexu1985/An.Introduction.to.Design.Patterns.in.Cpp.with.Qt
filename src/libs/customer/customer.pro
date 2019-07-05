@@ -1,8 +1,10 @@
 include (../libs.pri)
 TEMPLATE=lib
 
-LIBS += -ldataobjects  
+LIBS += -ldataobjects -L../dataobjects
 INCLUDEPATH +=  ../dataobjects 
+
+QT += widgets
 
 # Input
 HEADERS += custType.h customer.h customerlist.h  customerfactory.h 
