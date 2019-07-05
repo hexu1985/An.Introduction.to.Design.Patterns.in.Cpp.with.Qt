@@ -1,5 +1,6 @@
-#include <QtGui>
 #include <QtSql>
+#include <QFileDialog>
+#include <QMessageBox>
 #include "ui_DbConnectionForm.h"
 #include "dbconnectionform.h"
 #include "dbconnectionsettings.h"
@@ -25,8 +26,8 @@ DbConnectionForm::DbConnectionForm(QWidget* parent)
 
     ui->userLineEdit->setText(db.userName());
     QSettings s;
-    QString path = s.value("db.path", QDesktopServices::storageLocation(
-            QDesktopServices::DataLocation)).toString();
+    QString path = s.value("db.path", QStandardPaths::writableLocation(
+            QStandardPaths::DataLocation)).toString();
     ui->dbFileLineEdit->setText(path);
     ui->databaseLineEdit->setText(db.databaseName());
     QTimer::singleShot(2000, this, SLOT(on_driverCombo_activated()));
